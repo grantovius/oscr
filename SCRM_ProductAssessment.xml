@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd                       http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="SCRM - Product Assessment" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1">
+  <status date="2024-11-1">accepted</status>
+  <title>Supply Chain Risk Management (SCRM) - Product Security Assessment Checklist</title>
+  <description>This is a checklist for doing surface-level security assessments of a product for supply chain security, particularly an IT product. This is intended to use publicly available resources and will be updated with new resources as they are discovered</description>
+  <notice id="terms-of-use" xml:lang="en">
+  </notice>
+  <front-matter xml:lang="en">
+  </front-matter>
+  <rear-matter xml:lang="en">
+  </rear-matter>
+  <reference href="github.com/grantovius/oscr/prod">
+    <dc:publisher>github.com/grantovius</dc:publisher>
+    <dc:source>
+      github.com/grantovius/oscr/prod</dc:source>
+  </reference>
+  <version>Prod1.0.0</version>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-PUI8O" severity="Low">
+      <version>1.0.0</version>
+      <title>Product Name</title>
+      <description>&lt;VulnDiscussion&gt;What is the product name? Include specifics such as the model number, service tag or product ID such that the item can be ordered with the same identifier and the exact same product will be deliered.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-CMCZW" severity="Low">
+      <version>1.0.0</version>
+      <title>Product Type</title>
+      <description>&lt;VulnDiscussion&gt;What is the product type? Select from [Hardware, Software, Firmware, Service]. If the purchased product is hardware that comes with software, select hardware. A separate risk assessment will need to be done for software unless it is immutable to the hardware.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-8VII6" severity="Low">
+      <version>1.0.0</version>
+      <title>Product Description</title>
+      <description>&lt;VulnDiscussion&gt;Describe the product, its general type and purpose with special consideration for security concerns.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-V860C" severity="Low">
+      <version>1.0.0</version>
+      <title>Product Author/Manufacturer</title>
+      <description>&lt;VulnDiscussion&gt;Who is the producer of this product? If there has been a security assessment done of the producer, list the unique ID of that assessment and/or of the business.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-P5AG9" severity="Low">
+      <version>1.0.0</version>
+      <title>CHESS Product ID</title>
+      <description>&lt;VulnDiscussion&gt;If the product is available in CHESS, what is the product ID in the supplier's catalogue for that contract?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductID" xmlns="">
+    <title>Product Identifiers</title>
+    <Rule id="REQ-HIVV6" severity="Low">
+      <version>1.0.0</version>
+      <title>CHESS Product SONA</title>
+      <description>&lt;VulnDiscussion&gt;If the product is not available in CHESS, has a SONA been procured? List a location (PoC, file path or URL) where the SONA can be found.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-P0QI0" severity="Low">
+      <version>1.0.0</version>
+      <title>License Type</title>
+      <description>&lt;VulnDiscussion&gt;What type of license does this product use? 
+        - If there is no license associated, list "none, one-time purchase". 
+        - If it is a perpetual license, list "Perpetual License". 
+        - If it is an open source license, list the license type and version (MIT, GNU, etc.). 
+        - If it is a proprietary license, list it as such and provide a URL or further info to look up the license details.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-9TD54" severity="Low">
+      <version>1.0.0</version>
+      <title>TAA Compliance</title>
+      <description>&lt;VulnDiscussion&gt;Does this product comply with FAR 52.225-5 reuqiring products to be manufactured in TAA signatory countries? (https://www.acquisition.gov/far/52.225-5) 
+        Put another way, is this product manufactured (or can it be manufactured upon request) in a TAA signatory country?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-KRG63" severity="Low">
+      <version>1.0.0</version>
+      <title>DISA Approved Products List</title>
+      <description>&lt;VulnDiscussion&gt;Is this product on the DISA Enterprise Network Approved Products List (APL)? 
+        https://aplits.disa.mil/processAPList.action
+        This site requires a CAC card to access. &lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-4VOS0" severity="Low">
+      <version>1.0.0</version>
+      <title>NIAP/CommonCritieria Approval</title>
+      <description>&lt;VulnDiscussion&gt;Is the product NIAP / Common Criteria approved?
+        NIAP: Product Compliant List (niap-ccevs.org)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-S5SZN" severity="Low">
+      <version>1.0.0</version>
+      <title>Wireless Capabilities</title>
+      <description>&lt;VulnDiscussion&gt;Does this technology have wireless capability? (describe if so)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-XV5BP" severity="Low">
+      <version>1.0.0</version>
+      <title>Data-At-Rest Encryption</title>
+      <description>&lt;VulnDiscussion&gt;Does this technology have data at rest encryption capability? (describe if so)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-HI167" severity="Low">
+      <version>1.0.0</version>
+      <title>Data-In-Transit Encryption</title>
+      <description>&lt;VulnDiscussion&gt;Does this technology have data-in-transit encryption capability? (describe if so)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-2T2SK" severity="Low">
+      <version>1.0.0</version>
+      <title>Hardware Ports</title>
+      <description>&lt;VulnDiscussion&gt;Does the device have hardware ports, if HW? (describe each if so)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="IntendedUse" xmlns="">
+    <title>Product Intended Use</title>
+    <Rule id="REQ-E41FB" severity="Low">
+      <version>1.0.0</version>
+      <title>Data Type</title>
+      <description>&lt;VulnDiscussion&gt;What kind of data will this technology process in its intended use?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-PVR0A" severity="Low">
+      <version>1.0.0</version>
+      <title>TEMPEST Certified</title>
+      <description>&lt;VulnDiscussion&gt;Is this technology TEMPEST certified? If so, obtain a copy of the certificate and list where it can be found.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="IntendedUse" xmlns="">
+    <title>Product Intended Use</title>
+    <Rule id="REQ-0E3HB" severity="Low">
+      <version>1.0.0</version>
+      <title>Environment</title>
+      <description>&lt;VulnDiscussion&gt;What kind of environment is this product to be deployed in? How and where will it be implemented?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-XUZ0C" severity="Low">
+      <version>1.0.0</version>
+      <title>Tech Specs</title>
+      <description>&lt;VulnDiscussion&gt;What capabilities or functions does this technology have? (tech specs, user guide or other functionality brief from vendor attached here will suffice)&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-M0Y5F" severity="Low">
+      <version>1.0.0</version>
+      <title>CVEs on NVD</title>
+      <description>&lt;VulnDiscussion&gt;List any outstanding vulnerabilities against this product from the NVD and IAVMs from DISA.
+        List the CPE(s) from NVD (if available) that will assist in identifying future vulnerabilities.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-IX5FT" severity="Low">
+      <version>1.0.0</version>
+      <title>Applicable STIG or SRG</title>
+      <description>&lt;VulnDiscussion&gt;STIG or SRG applicable to this technology?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-GA612" severity="Low">
+      <version>1.0.0</version>
+      <title>Vulnerability Scan</title>
+      <description>&lt;VulnDiscussion&gt;Results of a vulnerability scan against technology?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-KS1JE" severity="Low">
+      <version>1.0.0</version>
+      <title>Updates and Patches</title>
+      <description>&lt;VulnDiscussion&gt;How often are updates/patches published for the product?&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-TTW0N" severity="Low">
+      <version>1.0.0</version>
+      <title>Overall Risks</title>
+      <description>&lt;VulnDiscussion&gt;List the overall risks identified in the use of this product, as well as any recommendations for deploying it securely if applicable.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-6VJ9L" severity="Low">
+      <version>1.0.0</version>
+      <title>MITRE ATTaCK Model</title>
+      <description>&lt;VulnDiscussion&gt;Complete a model of the product against the MITRE ATTaCK Framework indicating any attack vectors applicable to the product, and provide it here, either as the location to an external file/resource or pasted in as JSON.
+        https://mitre-attack.github.io/attack-navigator/&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-6VJ9L" severity="Low">
+      <version>1.0.0</version>
+      <title>MITRE D3FEND Model</title>
+      <description>&lt;VulnDiscussion&gt;Complete a model of the product against the MITRE D3FEND Framework indicating any defensive measures in place in the product, and provide it here, either as the location to an external file/resource or pasted in as JSON.
+        https://d3fend.mitre.org/&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="Vulns" xmlns="">
+    <title>Product Vulnerabilities</title>
+    <Rule id="REQ-32TIV" severity="Low">
+      <version>1.0.0</version>
+      <title>MITRE System of Trust</title>
+      <description>&lt;VulnDiscussion&gt;Complete a model of the product against the MITRE System of Trust Framework as a complete SCRM assessment for the product, and provide it here, either as the location to an external file/resource or pasted in as JSON.
+        https://sot.mitre.org/
+        As of this revision, the MITRE SoT and its associated Body of Knowledge are under development and haven't been completely released yet. The website does provide ways to be notified of updates and to register for initial access.&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="ProductDesc" xmlns="">
+    <title>Product Description</title>
+    <Rule id="REQ-KFL0U" severity="Low">
+      <version>1.0.0</version>
+      <title>NIST Asset ID Model</title>
+      <description>&lt;VulnDiscussion&gt;Complete a model of the product using NIST's SCAP Asset Identification schema, and provide it here, either as the location to an external file/resource or pasted in as JSON.
+        https://csrc.nist.gov/Projects/Security-Content-Automation-Protocol/Specifications/aid&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+</Benchmark>

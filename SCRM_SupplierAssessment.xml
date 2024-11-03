@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd                       http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="SCRM - Product Assessment" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.1">
+  <status date="2024-11-1">accepted</status>
+  <title>Supply Chain Risk Management (SCRM) - Supplier Security Assessment Checklist</title>
+  <description>This is a checklist for doing surface-level security assessments of a supplier for supply chain security, particularly an IT product. This is intended to use publicly available resources and will be updated with new resources as they are discovered</description>
+  <notice id="terms-of-use" xml:lang="en">
+  </notice>
+  <front-matter xml:lang="en">
+  </front-matter>
+  <rear-matter xml:lang="en">
+  </rear-matter>
+  <reference href="https://csrc.nist.gov/pubs/sp/800/171/r3/final">
+    <dc:publisher>github.com/grantovius</dc:publisher>
+    <dc:source>
+      github.com/grantovius/oscr</dc:source>
+  </reference>
+  <version>Supp1.0.0</version>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-ODVT1" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier Name</title>
+      <description>&lt;VulnDiscussion&gt;What is the name of the business? 
+        Where possible, use the name of the business as indicated on the official business registration record in the country/state where they are registered.
+        If the supplier is an organization without a business ID (like an open-source software author or a nonprofit organization), list as much identifying information as possible.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-C284H" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier Country</title>
+      <description>&lt;VulnDiscussion&gt;In what country is the supplier registered as a business or organization? 
+        There are often multiple countries where a business or organization is registered. 
+        For a business, list the country of origin for the business entity or branch you will be doing business with (the one that will appear on the invoice).
+        If the business entity is a non-localized entity such as an organization or internet group, describe this. If the organization has any localizing information, like an HQ address, default language, or national domain name, list the country indicated by this info..&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-C5HNY" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier HQ Address</title>
+      <description>&lt;VulnDiscussion&gt;List the address of the supplier's main office, if applicable.&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-LCP50" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier CAGE ID</title>
+      <description>&lt;VulnDiscussion&gt;List the CAGE ID of the supplier's main office, if applicable.
+        https://cage.dla.mil/Home/UsageAgree&lt;/VulnDiscussion&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-9CFOX" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier DUNS ID</title>
+      <description>&lt;VulnDiscussion&gt;List the DUNS ID of the supplier's main office, if applicable.&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierDesc" xmlns="">
+    <title>Supplier Description</title>
+    <Rule id="REQ-1IERQ" severity="Low">
+      <version>1.0.0</version>
+      <title>Supplier Compliance</title>
+      <description>&lt;VulnDiscussion&gt;Does the company advertise any certifications or standards compliance related to internal security practices, supply chain security or product quality?
+        Examples include CMMC, NIST Cyber Security Framework (CSF), FedRAMP, ISO 9001, GDPR, and others.
+        If unsure, it's a good practice to reach out to a point of contact and ask.
+        In place of, or in addition to third-party compliance, list any advertised claims of internal security, supply chain and quality practices. Provide links where possible.&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierDesc" xmlns="">
+    <title>Supplier Description</title>
+    <Rule id="REQ-DLLMZ" severity="Low">
+      <version>1.0.0</version>
+      <title>Chinese Military Complex Embargo</title>
+      <description>&lt;VulnDiscussion&gt;Is the company on the list of embargoed companies related to the Chinese military complex (1260H)?
+        https://media.defense.gov/2022/Oct/05/2003091659/-1/-1/0/1260H%20COMPANIES.PDF&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierDesc" xmlns="">
+    <title>Supplier Description</title>
+    <Rule id="REQ-NS29T" severity="Low">
+      <version>1.0.0</version>
+      <title>Foreign Trade Sanctions</title>
+      <description>&lt;VulnDiscussion&gt;Is the company subject to any foreign trade sanctions?
+        https://ofac.treasury.gov/sanctions-programs-and-country-information
+        Check for country-specific sanctions and also look at the Cyber sanctions page&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierAssessments" xmlns="">
+    <title>Supplier Assessments</title>
+    <Rule id="REQ-IW7JE" severity="Low">
+      <version>1.0.0</version>
+      <title>MITRE SOT Model</title>
+      <description>&lt;VulnDiscussion&gt;Provide a completed assessment of the supplier against the MITRE System of Trust (SoT) SCRM model. Either provide the location of an external file or copy the JSON text into the text field of this control.
+        https://sot.mitre.org/
+        As of this revision, the MITRE SoT and its associated Body of Knowledge are under development and haven't been completely released yet. The website does provide ways to be notified of updates and to register for initial access.&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierAssessments" xmlns="">
+    <title>Supplier Assessments</title>
+    <Rule id="REQ-FR788" severity="Low">
+      <version>1.0.0</version>
+      <title>Other Risks</title>
+      <description>&lt;VulnDiscussion&gt;Provide any other risks identified during investigation of the supplier.
+        Consider such factors as:
+        - Whether the host country legally cooperates with the US
+        - Whether there are any foreign interests represented in the leadership of the organization that might be counter to US interests
+        - Whether the supplier is a stakeholder in any foreign countries or organizations whose interests might be counter to US interests
+        - Whether the supplier can trace their supply chain for critical components
+        - If the supplier provides open-source products, whether the source is completely open to contribution or is developed internally with reviews of any third-party contributed code or components&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="SupplierID" xmlns="">
+    <title>Supplier Identifiers</title>
+    <Rule id="REQ-7XY1E" severity="Low">
+      <version>1.0.0</version>
+      <title>NVD CPE</title>
+      <description>&lt;VulnDiscussion&gt;Provide the Common Platform Enumeration from the National Vulnerability Database if it is available. This will assist in searching for and being notified of any vulnerabilities associated with this supplier's products.
+        https://nvd.nist.gov/products/cpe/search&gt;</description>
+      <fixtext></fixtext>
+      <check>
+        <check-content></check-content>
+      </check>
+    </Rule>
+  </Group>
+</Benchmark>
